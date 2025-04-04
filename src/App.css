@@ -1,0 +1,33 @@
+button {
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* App.css or index.css */
+
+/* Định nghĩa animation cho bong bóng */
+@keyframes bubble-animation {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-200px) scale(1.5);
+  }
+  100% {
+    transform: translateY(-500px) scale(0.8);
+    opacity: 0; /* Bong bóng sẽ dần biến mất khi bay lên */
+  }
+}
