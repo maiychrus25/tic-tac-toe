@@ -12,7 +12,7 @@ function App() {
     <div
       className={`App shadow-md p-4 ${isDarkMode ? "bg-black" : "bg-white"}`}
     >
-      <Game />
+      <Game isDarkMode={isDarkMode} />
       <Snowfall />
       <Toggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Footer />

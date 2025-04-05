@@ -4,12 +4,17 @@ import PropTypes from "prop-types";
 
 class Board extends React.Component {
   render() {
-    const { board, handleClick } = this.props;
+    const { isDarkMode, board, handleClick } = this.props;
     return (
-      <div className="m-6 w-[30vw] h-[55vh] shadow-md  border-[#ddd] grid grid-cols-3 grid-rows-3">
+      <div className="m-6 w-[250px] h-[250px] md:w-[250px] md:h-[250px] lg:w-[350px] lg:h-[350px] xl:w-[500px] xl:h-[500px] gap-6 grid grid-cols-3 grid-rows-3">
         {board.map((item, index) => {
           return (
-            <Cell key={index} value={item} onClick={() => handleClick(index)} />
+            <Cell
+              isDarkMode={isDarkMode}
+              key={index}
+              value={item}
+              onClick={() => handleClick(index)}
+            />
           );
         })}
       </div>
@@ -19,6 +24,7 @@ class Board extends React.Component {
 
 Board.propTypes = {
   boards: PropTypes.array.isRequired,
+  isDarkMode: PropTypes.bool.isRequired,
 };
 
 export default Board;
