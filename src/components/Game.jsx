@@ -58,7 +58,7 @@ const Game = ({ isDarkMode }) => {
 
   return (
     <div>
-      <h1 className="mt-56 md:mt-52 lg:mt-44 xl:mt-28 w-full h-full text-4xl font-bold text-center">
+      <h1 className="mt-36 md:mt-52 lg:mt-44 xl:mt-28 w-full h-full text-4xl font-bold text-center">
         <span className="text-blue-800">Tic</span>
         <span className="text-slate-300">Tac</span>
         <span className="text-red-500">Toe</span>
