@@ -30,6 +30,7 @@ const Game = ({ isDarkMode }) => {
       cloneBoard[index] = null;
       setBoard(cloneBoard);
       setIndex(null);
+      setXisNext((xIsNext) => !xIsNext);
     }
   };
 
